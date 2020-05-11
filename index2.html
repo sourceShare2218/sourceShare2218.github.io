@@ -5,19 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <style>
-            body {
-                color: black;
-            }
-
             div.outside {
                 text-align: center;
             }
             div.inside {
                 display:inline-block;
-            }
-            
-            button:hover {
-                background-color: #45b2d1;
             }
         </style>
 
@@ -29,23 +21,32 @@
         <title>Source Sharing</title>
     </head>
     <body>
-        <h1>Hi, Thanks For Visiting <span class="smile">:)</span></h1>
-
+        <h1>Hi, {{Ryota}} <span class="smile">:)</span></h1>
+        <br>
+        <br>
+        <br>
         <div class="outside">
             <div class="inside">
-                <h2>Log in</h2>
-                <input name="accountId" type="text" placeholder="Account ID">
-                <input name="password" type="password" placeholder="Password">
-                <input name="country" list="countries" placeholder="Country">
-                <datalist id="countries">
-                    <option value="Japan">
-                    <option value="Others">
-                </datalist>
-                <button><a href="index2.html">Log in</a></button> 
-                <button><a href="signUp.html">Sign Up</a></button>
-                <form></form>
-            </div>
+                <h2>PlayGrounds</h2>
+                <ul>
+                    <li><a href="codingCamp/index.html">Coding Practice Camp 2020</a></li>
+                    <li><a href="pythonIntro/index.html">Introduction to Python</a></li>
+                    <li><a href="physicsForFun/index.html">Introduction to Physics</a></li>
+                </ul>
+            </div>  
         </div>
+        <br>
+        <br>
+        <br>
+        <div class="outside">
+            <div class="inside">
+                <h2>Source Sharing</h2>
+                <ul>
+                    <li><a href="aisourceShare.html">AI Source Sharing</a></li>
+                </ul>
+            </div>  
+        </div>
+
 
         <!-- Bootstrap JS-->
         <script href="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -53,3 +54,4 @@
         <script href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>        
     </body>
 </html>
+
