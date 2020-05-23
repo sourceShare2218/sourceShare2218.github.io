@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style>
+            h1 {
+                text-align: center;
+                font-weight: bold;
+            }
+            .form {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Sign Up</h1>
+        <div id="form">
+            <form method="POST">
+                {% if alreadyUsed %}
+                <p style="color:red;">this E-mail is already used!</p>
+                {% endif %}
+                <input name="accountID" type="text" placeholder="Valid E-mail Address"><br>
+                <input name="password" type="password" placeholder="Password"><br>
+                <input name="passwordAgain" type="password" placeholder="Re-enter Password"><br>
+                <datalist id="countries">
+                    <option value="Japan">
+                    <option value="Others">
+                </datalist>
+                <button type="submit"><a href="home.html">Log in</a></button> 
+            </form>
+
+        </div>
+
+    </body>
+</html>
