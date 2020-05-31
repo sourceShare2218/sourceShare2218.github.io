@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.smile {
+    color: blue;
+    font-weight: bold;
+}
+
+body {
+    color: black;
+}
+
+div.outside {
+    text-align: center;
+}
+
+div.inside {
+    display:inline-block;
+}
+
+button:hover {
+    background-color: #45b2d1;
+}
