@@ -8,7 +8,20 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
         <link rel="stylesheet" href="css/CodingCamp2020.css">
-        <script href="js/CodingCamp2020.js"></script>
+				<script>
+					function changePage(number) {
+							const xhttp = new XMLHttpRequest();
+							xhttp.onreadystatechange = function() {
+									if (this.status == 200) {
+											let content = JSON.parse(this.content);
+											console.log(content);
+											document.getElementById("lecture-frame").src = content;
+									}
+							};
+							xhttp.open("GET", `https://raw.githubusercontent.com/sourceShare2218/IntroductionToAlgorithm/master/Day${number}.html`, true);
+							xhttp.send();
+					}
+				</script>
     </head>
     <body>
         <h1>Coding Practice Camp 2020</h1>
