@@ -1,0 +1,49 @@
+body {
+    min-height: 1000px;
+}
+
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+button.dark {
+    background-color: black;
+    border: white solid 1px;
+    border-radius: 4px;
+}
+
+button.dark:hover {
+    background-color: darkslateblue;
+}
+
+p {
+    line-height: 1.8;
+    word-spacing: 1px;
+}
+
+#goal {
+    font-weight: bold;
+}
+
+li {
+margin-bottom: 10px;
+}
+
+li.emphasis {
+font-weight: bold;
+}
+
+img {
+align-content: center;
+margin: 10px;
+}
+         
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
